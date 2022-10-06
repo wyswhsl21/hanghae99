@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import "./App.css";
 const List = ({ value, setValue }) => {
   return (
@@ -14,7 +14,7 @@ const List = ({ value, setValue }) => {
   );
 };
 const Form = ({ value, setValue }) => {
-  const [content, setContent] = React.useState("");
+  const [content, setContent] = useState("");
   const handleContentChange = (e) => {
     e.preventDefault();
     setContent(e.target.value);
